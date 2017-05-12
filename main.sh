@@ -1,4 +1,5 @@
 sudo add-apt-repository ppa:jonathonf/vim
+sudo apt-get update
 sudo apt-get install vim-gtk3
 
 bash install_fonts.sh
