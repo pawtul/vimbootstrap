@@ -19,4 +19,5 @@ git clone https://github.com/VundleVim/Vundle.vim.git
 
 echo "Your setup is ready."
 echo "enter your vim and type :PluginInstall"
+echo "install python3 packages: mypy flake8 pylint"
 
