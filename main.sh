@@ -16,6 +16,7 @@ if [ -f ~/.vimrc ]; then
 fi
 cp dotfiles/.vimrc ~
 cp dotfiles/flake8 ~/.config/
+cp dotfiles/pylintrc ~/.config/
 
 cd ~/.vim/bundle
 
