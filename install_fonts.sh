@@ -4,3 +4,4 @@ mkdir ~/.fonts
 cp ./fonts/* ~/.fonts/
 
 fc-cache -f -v
+
