@@ -1,5 +1,5 @@
-bash install_vim.sh
 bash install_dependencies.sh
+bash install_vim.sh
 bash install_fonts.sh
 
 if [ -f ~/.vimrc ]; then

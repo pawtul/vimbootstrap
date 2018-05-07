@@ -2,9 +2,9 @@
 git clone https://github.com/vim/vim.git
 
 cd vim
- ./configure --with-features=huge --enable-perlinterp=yes --enable-rubyinterp=yes --enable-python3interp=yes --enable-multibyte --enable-luainterp=yes --with-vim-name=vim
+ ./configure --with-features=huge --enable-perlinterp=yes --enable-rubyinterp=yes --enable-python3interp=yes --enable-multibyte --enable-luainterp=yes --with-vim-name=vim3
 make
-make install
+sudo make install
 
 cd ..
 
@@ -17,9 +17,13 @@ git clone https://github.com/vim/vim.git
 cd vim
  ./configure --with-features=huge --enable-perlinterp=yes --enable-rubyinterp=yes --enable-pythoninterp=yes --enable-multibyte --enable-luainterp=yes --with-vim-name=vim2
 make
-make install
+sudo make install
 
 cd ..
 
 rm -rf vim
+
+if [[ ! `cat ~/.bashrc | grep "alias vim"` ]]; then
+    echo "alias vim='vim3'" >> ~/.bashrc
+fi
 
